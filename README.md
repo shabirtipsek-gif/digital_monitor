@@ -1,6 +1,6 @@
 # digital_monitor
 Collaborators:
--Semakula 
+-Ssemakula Shabiru
 
 other
 -Kalungi Isaac
