@@ -1,0 +1,9 @@
+{
+  "port": 5103,
+  "adminUsername": "admin",
+  "adminPassword": "Admin@123",
+  "jwtSecret": "60e62cdf72fc00b49783dc3442516283b9808a438c2530747e57630a5ced94ad38b58a6474f51067859f05cfd52f08d1",
+  "offlineAfterMinutes": 15,
+  "metricRetentionDays": 7,
+  "advertisedHost": ""
+}

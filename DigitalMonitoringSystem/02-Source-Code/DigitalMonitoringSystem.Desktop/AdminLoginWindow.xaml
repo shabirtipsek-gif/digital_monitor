@@ -1,0 +1,29 @@
+<Window x:Class="DigitalMonitoringSystem.Desktop.AdminLoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Administrator sign-in" Height="330" Width="420"
+        WindowStartupLocation="CenterOwner" ResizeMode="NoResize"
+        Background="#0b1220" Foreground="White">
+    <Grid Margin="28">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Administrator sign-in" FontSize="22" FontWeight="Bold" Margin="0,0,0,22"/>
+        <StackPanel Grid.Row="1" Margin="0,0,0,14">
+            <TextBlock Text="Username" Foreground="#9ca3af" Margin="0,0,0,6"/>
+            <TextBox x:Name="UsernameInput" Padding="10" Background="#111827" Foreground="White" BorderBrush="#334155"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Margin="0,0,0,12">
+            <TextBlock Text="Password" Foreground="#9ca3af" Margin="0,0,0,6"/>
+            <PasswordBox x:Name="PasswordInput" Padding="10" Background="#111827" Foreground="White" BorderBrush="#334155"/>
+        </StackPanel>
+        <TextBlock x:Name="ErrorMessage" Grid.Row="3" Foreground="#fca5a5" Margin="0,0,0,10"/>
+        <Button Grid.Row="4" Content="Sign in" Height="42" HorizontalAlignment="Stretch"
+                VerticalAlignment="Bottom" Background="#2563eb" Foreground="White"
+                BorderThickness="0" FontWeight="SemiBold" Click="SignIn_Click"/>
+    </Grid>
+</Window>

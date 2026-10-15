@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="DigitalMonitoringSystem.Api\DigitalMonitoringSystem.Api.csproj" />
+  <Project Path="DigitalMonitoringSystem.Agent\DigitalMonitoringSystem.Agent.csproj" />
+  <Project Path="DigitalMonitoringSystem.Desktop\DigitalMonitoringSystem.Desktop.csproj" />
+  <Project Path="DigitalMonitoringSystem.Shared\DigitalMonitoringSystem.Shared.csproj" />
+  <Project Path="DigitalMonitoringSystem.Tests\DigitalMonitoringSystem.Tests.csproj"  />
+</Solution>

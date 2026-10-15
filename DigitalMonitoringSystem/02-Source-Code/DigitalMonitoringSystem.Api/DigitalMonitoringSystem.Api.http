@@ -1,0 +1,43 @@
+@DigitalMonitoringSystem.Api_HostAddress = http://localhost:5103
+
+### Health check
+GET {{DigitalMonitoringSystem.Api_HostAddress}}/health
+Accept: application/json
+
+### Login as administrator
+POST {{DigitalMonitoringSystem.Api_HostAddress}}/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "Admin@123"
+}
+
+### Dashboard summary
+GET {{DigitalMonitoringSystem.Api_HostAddress}}/api/dashboard
+Accept: application/json
+
+### Devices list
+GET {{DigitalMonitoringSystem.Api_HostAddress}}/api/devices
+Accept: application/json
+
+### Enforce a policy (requires bearer token)
+@token = <paste-token-from-login-response>
+POST {{DigitalMonitoringSystem.Api_HostAddress}}/api/devices/DEV-001/policies/POL-100/enforce
+Authorization: Bearer {{token}}
+Accept: application/json
+
+### Enroll a new device (requires bearer token)
+POST {{DigitalMonitoringSystem.Api_HostAddress}}/api/devices/enroll
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "hostname": "lab-device-12",
+  "ipAddress": "10.0.0.88",
+  "vendor": "Dell",
+  "platform": "Windows 11",
+  "location": "Operations"
+}
+
+###
